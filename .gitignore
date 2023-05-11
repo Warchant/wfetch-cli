@@ -1,0 +1,11 @@
+__pycache__
+*.pyc
+.venv
+.tox_cache
+.mypy_cache
+.ruff_cache
+*.exe
+*.zip
+*.tar.gz
+*.tar.xz
+*.tar
