@@ -84,7 +84,9 @@ def run(_args: List[str]):
             got = file_sha256(target)
             if args.sha256 and got == args.sha256:
                 logging.info(
-                    f"Not downloading file {target}, because it exists and has expected hash sha256={got}"
+                    f"""\
+Not downloading file {target}, because it exists and
+has expected hash sha256={got}"""
                 )
                 return
 
@@ -125,7 +127,7 @@ Actual   sha256 : {got}
 """
         )
 
-        logging.info(f"sha256 checksum matched")
+        logging.info("sha256 checksum matched")
 
 
 def main(args=sys.argv[1:]):

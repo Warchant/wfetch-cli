@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "wfetch-cli"
 version = "0.1.0"
-description = "A tool that can download files, verify their checksum, and if they are archives - unpack them."
+description = "A tool that can download files and verify their checksum on the fly."
 authors = ["Bohdan Vanieiev <bohdan.vanieiev@aptiv.com>"]
 readme = "README.md"
 packages = [{include = "wfetch", from="src"}]
